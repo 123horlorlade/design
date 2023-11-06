@@ -1,0 +1,647 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(files/backgrounddd.PNG);
+  background-size: cover;
+  background-position: center;
+}
+nav{
+  width: 100%;
+  height: auto;
+  background: #fff;  
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  position: sticky;
+}
+nav .logo{
+  width: 20%;
+  height: 60px;
+}
+nav .logo img{
+  width: auto;
+  height: 100%;
+}
+nav ul{
+  width: 50%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  right: 10px;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+nav ul li a{
+  list-style: none;
+  color: #045730;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+nav ul li a:hover{
+  color: darkblue;
+}
+nav ul li hr{
+  height: 2px;
+  background: #045730;
+}
+#list{
+  width: 150px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+  position: absolute;
+  right: 30px;
+  height: 120px;
+  margin-top: 25px;
+  display: none;
+}
+#options{
+  width: 100%;
+  padding: 55px 0 0 10px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+#options p{
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+#options img{
+  width: 25px; 
+  top: 12px;
+  left: -15px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+
+.below-bar{
+  width: 100%;
+  height: 30px;
+  background: aqua;
+  opacity: .3;
+}
+.main-screen{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-screen .welcome-greeting{
+  width: 800px;
+  height: auto;
+  margin-left: 15px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+.main-screen .welcome-greeting h1{
+  font-size: 5rem;
+  color: aqua;
+  margin-top: 20px;
+}
+.main-screen .welcome-greeting h3{
+  font-size: 5rem;
+  color: #fff;
+}
+.main-screen .welcome-greeting p{
+  color: #fff;
+  font-size: 20px;
+  align-items: justify;
+  margin-bottom: 20px;
+}
+.main-screen .welcome-greeting i{
+  color: #fff;
+  font-weight: 600;
+}
+.main-screen .welcome-greeting i span{
+  color: aqua;
+}
+.main-screen .welcome-greeting input{
+  padding: 10px 50px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.main-screen .welcome-greeting input:hover{
+  color: aqua;
+  border: 2px solid aqua;
+}
+
+
+
+
+    /* ...............Welcome img section.............. */
+
+.main-screen .welcome-img{
+  width: 410px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 15px;
+  border-radius: 35px;
+  animation: move 2s linear;
+}
+
+@keyframes move{
+  10%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.main-screen .welcome-img img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+     /* ............services.......... */
+
+     /* title */
+ .title{
+  color: #fff;
+  background: #000;
+  padding: 20px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+  #services{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  #services .renderservices{
+    width: 400px;
+    height: 410px;
+    border: 2px solid rgb(9, 96, 96);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  #services .renderservices .indicator p{
+    font-weight: bold;
+    font-size: 8rem;
+    color: rgb(3, 39, 39);
+    text-align: center;
+  }
+  #services .renderservices .indicator h3{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #services .renderservices .indicator h6{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  #services .renderservices .indicator button{
+    color: #fff;
+    background: rgb(255, 89, 0);
+    padding: 10px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: .1s;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  #services .renderservices .indicator button:hover{
+    color: yellow;
+    margin-top: 24px;
+  }
+
+ 
+  /* .............about Us.......... */
+
+  #aboutUs .aboutCol{
+    width: 100%;
+    height: auto;
+    background: plum;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #aboutUs .aboutCol .img-sect-about{
+    width: 520px;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #aboutUs .aboutCol .img-sect-about img{
+    width: 100%;
+    height: auto;
+  }
+  #aboutUs .aboutCol .word-sect-about{
+    width: 700px;
+    height: 480px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 30px;
+  }
+  #aboutUs .aboutCol .word-sect-about h3{
+    color: #000; 
+    font-weight: bold;
+    text-align: justify;
+  }
+  #aboutUs .aboutCol .word-sect-about img{
+    width: 80%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+    /* .............samle of my works......... */
+
+
+    #works .sample-sec-works{
+      width: 100%;
+      height: auto;
+      background: #000;
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    #works .sample-sec-works .worksSect{
+      width: 410px;
+      height: 400px;
+      border: 2px solid rebeccapurple;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    #works .sample-sec-works .worksSect .img-sect-woo{
+      width: 90%;
+      height: 350px;
+      margin-left: 20px;
+      overflow: hidden;
+    }
+    #works .sample-sec-works .worksSect img{
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    #works .sample-sec-works .worksSect .workT h3{
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    #contactUs{
+      width: 100%;
+      height: auto;
+      background: #032e1a;
+      padding-top: 30px;
+      padding-bottom: 130px;
+    }
+    #contactUs .write-content{
+      width: 90%;
+      height: 400px;
+      display: block;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    #contactUs .write-content h3{
+      margin-top: 10px;
+      font-weight: bold;
+      padding: 10px 10px;
+      background: rgb(161, 9, 34);
+      color: yellow;
+      display: flex;
+      width: 500px;
+    }
+    #contactUs .write-content input{
+      width: 500px;
+      height: 40px;
+      margin-top: 10px;
+      padding: 1px 10px;
+      font-weight: 600;
+      font-size: 16px;
+      outline: 0;
+      border: 0;
+    }
+    #contactUs .write-content textarea{
+      width: 500px;
+      margin-top: 10px;
+      padding: 1px 10px;
+      font-weight: 600;
+      font-size: 16px;
+      outline: 0;
+      border: 0;
+    }
+   #contactUs .write-content button{
+    padding: 10px 30px;
+    background-color: rgb(161, 9, 34);
+    color: yellow;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    transform: .2s;
+    margin-top: 20px;
+    margin-left: 220px;
+   }
+   #contactUs .write-content button:hover{
+    color: #fff;
+    border: 2px solid yellow;
+   }
+
+
+
+    .footer{
+      width: 100%;
+      height: auto;
+      background: #171717;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .footer .averFooter{
+      width: 500px;
+      height: 550px;
+      margin-left: 30px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px;
+      color: #fff;
+    }
+   .footer .averFooter img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+   }
+   .footer .averFooter h3{
+    font-size: 12px;
+    text-align: justify;
+   }
+
+    .footer .navigateFooter{
+      width: 400px;
+      height: 320px;
+      margin-left: 30px;
+    }
+    .footer .navigateFooter li{
+      text-decoration: none;
+      color: wheat;
+      margin-bottom: 5px;
+      list-style: none;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .footer .contactmee{
+      width: 300px;
+      height: 320px;
+      margin-left: 50px;
+    }
+
+    .footer .contactmee p{
+      margin-top: 20px;
+      font-size: 30px;
+      color: antiquewhite;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .footer .contactmee p img{
+      width: 50px;
+      height: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .close{
+      display: none;
+    }
+    .menu{
+      display: none;
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 900px){
+    
+     nav{
+      display: flex;
+      flex-wrap: wrap;
+     }
+     nav .logo{
+      width: 10%;
+     }
+     .menu{
+      display: block;
+      right: 10px;
+      position: absolute;
+      margin-top: 10px;
+      width: auto;
+      height: 20px;
+     }
+     .close{
+      width: 40px;
+      height: auto;
+      margin-left: 30px;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: block;
+     }
+     .below-bar{
+      display: none;
+     }
+     nav ul{
+        width: 200px;
+        height: 100vh;
+        display: none;
+        position: absolute;
+        right: 0; 
+        background: violet;
+        z-index: 999;
+      }
+      nav ul li{
+        margin-top: 20px;
+        padding-left: 10px;
+      }
+      nav ul li:hover{
+        background: rgb(213, 206, 213);
+        padding-top: 5px;
+        border-top-left-radius: 5px;
+      }
+      nav ul li a{
+        font-size: 18px;
+      }
+  
+
+
+      .main-screen .welcome-greeting{
+        width: 800px;
+        height: auto;
+        margin-left: 5px;
+        padding-left: 10px;
+        padding-bottom: 100px;
+        margin-top: 30px;
+      }
+      .main-screen .welcome-greeting h1{
+        font-size: 3rem;
+        color: aqua;
+        margin-top: 20px;
+      }
+      .main-screen .welcome-greeting h3{
+        font-size: 2.8rem;
+        color: gold;
+        background: red;
+        width: 185px;
+        padding: 2px 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .main-screen .welcome-greeting p{
+        color: #fff;
+        font-size: 18px;
+        align-items: justify;
+        background: #032e1a;
+        padding: 20px 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .main-screen .welcome-img{
+        width: 400px;
+        height: 390px;
+        overflow: hidden;
+        margin-left: 5px;
+        border-radius: 35px;
+        margin-top: -30px;
+      }
+
+      #aboutUs .aboutCol .word-sect-about h3{
+        color: #000; 
+        font-weight: bold;
+        text-align: justify;
+        font-size: 14px;
+      }
+
+
+
+
+      #contactUs .write-content h3{
+        margin-top: 10px;
+        font-weight: bold;
+        padding: 10px 10px;
+        background: rgb(161, 9, 34);
+        color: yellow;
+        display: flex;
+        width: 300px;
+      }
+      #contactUs .write-content input{
+        width: 300px;
+        height: 40px;
+        margin-top: 10px;
+        padding: 1px 10px;
+        font-weight: 600;
+        font-size: 16px;
+        outline: 0;
+        border: 0;
+      }
+      #contactUs .write-content textarea{
+        width: 300px;
+        margin-top: 10px;
+        padding: 1px 10px;
+        font-weight: 600;
+        font-size: 16px;
+        outline: 0;
+        border: 0;
+      }
+      #contactUs .write-content button{
+        padding: 10px 30px;
+        background-color: rgb(161, 9, 34);
+        color: yellow;
+        font-size: 20px;
+        border: 0;
+        outline: 0;
+        border-radius: 20px;
+        transform: .2s;
+        margin-top: 20px;
+        margin-left: 100px;
+       }
+       .footer .navigateFooter{
+        margin-top: 20px;
+       }
+       .footer .contactmee{
+        margin-top: 60px;
+       }
+
+   
+
+    }
+#msg{
+  color: yellow;
+  margin-top: -65px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
